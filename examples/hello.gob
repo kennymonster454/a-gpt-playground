@@ -1,0 +1,3 @@
+# Your first GoblinScript spell
+say "HELLO FROM GOBLINSCRIPT!"
+say "I am a programming language living in a Python file."
