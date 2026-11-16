@@ -128,3 +128,5 @@ class Arcade:
 
 if __name__=="__main__":
     root=tk.Tk(); Arcade(root); root.mainloop()
+
+# Build trigger: desktop arcade source is ready for Windows packaging.
