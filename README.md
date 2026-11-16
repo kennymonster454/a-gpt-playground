@@ -1,15 +1,24 @@
-# A-GPT Playground: Chaos Console
+# A-GPT Playground
 
-A tiny, dependency-free browser playground full of silly generators and experiments.
+A collection of experiments. The main project is **A-GPT Arcade**, a desktop game pack.
 
-## Run it
-Open `index.html` in a browser. No build step, package install, API key, or server required.
+## Desktop arcade for Windows
+Five playable games:
+- Snake
+- Pong
+- Dodge the Blocks
+- Memory Match
+- Number Guess
 
-## Toys
-- **Chaos button** — generates a completely random idea.
-- **Startup generator** — invents a questionable tech company.
-- **Name machine** — creates names for robots, planets, snacks, and more.
-- **Tiny oracle** — gives a playful answer to a question.
-- **Glitch mode** — scrambles the interface for a moment.
+## Get the EXE
+GitHub Actions builds a standalone Windows executable automatically when the game source changes.
 
-Everything runs locally in your browser. No data is sent anywhere.
+1. Open the Actions tab.
+2. Select Build Windows Arcade EXE.
+3. Open the latest successful run.
+4. Under Artifacts, download AGPT-Arcade-Windows.
+5. Extract the ZIP and run AGPT_Arcade.exe.
+
+You can also run the source with Python using: python game_suite.py
+
+No internet connection or API key is needed to play. The executable is built by GitHub Actions on a Windows runner.
