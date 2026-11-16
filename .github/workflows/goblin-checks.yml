@@ -1,0 +1,23 @@
+name: GoblinScript checks
+on:
+  push:
+    paths:
+      - "goblin.py"
+      - "examples/**"
+      - ".github/workflows/goblin-checks.yml"
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile interpreter
+        run: python -m py_compile goblin.py
+      - name: Run sample programs
+        run: |
+          python goblin.py examples/hello.gob
+          python goblin.py examples/loop.gob
+          python goblin.py examples/chaos.gob
