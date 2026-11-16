@@ -1,0 +1,12 @@
+# Variables, loops, and conditions
+set coins = 0
+repeat 5
+  add coins 3
+  say coins
+end
+if coins >= 15
+  say "TREASURE UNLOCKED!"
+else
+  say "The goblin needs more coins."
+end
+show
