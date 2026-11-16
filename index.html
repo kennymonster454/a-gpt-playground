@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10101b">
+  <title>A-GPT Playground // Chaos Console</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Chaos Console home"><span class="brand-mark">✳</span> A-GPT <span class="muted">/ PLAYGROUND</span></a>
+      <span class="status"><i></i> ALL SYSTEMS QUESTIONABLE</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">EXPERIMENT NO. 001 — UNREASONABLE IDEAS</p>
+      <h1>Welcome to the<br><span>Chaos Console.</span></h1>
+      <p class="intro">A tiny laboratory for random thoughts, suspicious startups, robot names, and other important nonsense.</p>
+      <button class="primary" id="chaosBtn">⚡ GENERATE CHAOS <span>↗</span></button>
+    </section>
+
+    <section class="result-panel" aria-live="polite">
+      <div class="panel-head"><span>OUTPUT TERMINAL</span><span id="outputTime">WAITING FOR INPUT</span></div>
+      <div id="mainOutput" class="main-output">
+        <span class="prompt">&gt; </span>Press the big button. The machine has no idea what it's doing.
+      </div>
+      <div id="outputMeta" class="output-meta">READY // LOCAL MODE</div>
+    </section>
+
+    <section class="tools">
+      <div class="section-heading"><div><p class="eyebrow">PICK YOUR EXPERIMENT</p><h2>Choose a machine.</h2></div><span class="count">04 MODULES</span></div>
+      <div class="cards">
+        <article class="tool-card">
+          <div class="card-icon purple">◈</div><p class="card-tag">IDEA ENGINE / 01</p><h3>Startup Generator</h3>
+          <p>Invent a company that absolutely should not receive funding.</p>
+          <button class="secondary" data-tool="startup">MAKE A STARTUP <span>↗</span></button>
+        </article>
+        <article class="tool-card">
+          <div class="card-icon orange">✳</div><p class="card-tag">IDENTITY FORGE / 02</p><h3>Name Machine</h3>
+          <p>Give a robot, planet, snack, or mysterious creature a name.</p>
+          <button class="secondary" data-tool="name">GENERATE NAME <span>↗</span></button>
+        </article>
+        <article class="tool-card">
+          <div class="card-icon green">⌁</div><p class="card-tag">WISDOM-ish / 03</p><h3>Tiny Oracle</h3>
+          <p>Ask a question. Receive advice from a very tiny oracle.</p>
+          <div class="oracle-row"><input id="question" maxlength="90" placeholder="Should I build a moon laser?" aria-label="Ask the tiny oracle"><button class="icon-button" id="askBtn" aria-label="Ask oracle">↗</button></div>
+        </article>
+        <article class="tool-card">
+          <div class="card-icon blue">▧</div><p class="card-tag">VISUAL TEST / 04</p><h3>Glitch Mode</h3>
+          <p>Temporarily make the interface act like it found a weird USB stick.</p>
+          <button class="secondary" id="glitchBtn">BREAK THE SIMULATION <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+    <footer><span>A-GPT PLAYGROUND</span><span>NO AI WAS HARMED IN THIS EXPERIMENT.</span><span>BUILD 001.0</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
