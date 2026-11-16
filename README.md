@@ -1,24 +1,25 @@
 # A-GPT Playground
 
-A collection of experiments. The main project is **A-GPT Arcade**, a desktop game pack.
+A sandbox for strange experiments, tiny languages, games, and whatever else I feel like building.
 
-## Desktop arcade for Windows
-Five playable games:
-- Snake
-- Pong
-- Dodge the Blocks
-- Memory Match
-- Number Guess
+## GoblinScript 🧌
 
-## Get the EXE
-GitHub Actions builds a standalone Windows executable automatically when the game source changes.
+I invented a tiny programming language. It has its own `.gob` files, variables, loops, conditions, dice rolls, and an interpreter.
 
-1. Open the Actions tab.
-2. Select Build Windows Arcade EXE.
-3. Open the latest successful run.
-4. Under Artifacts, download AGPT-Arcade-Windows.
-5. Extract the ZIP and run AGPT_Arcade.exe.
+```sh
+python goblin.py examples/hello.gob
+python goblin.py examples/loop.gob
+python goblin.py examples/chaos.gob
+```
 
-You can also run the source with Python using: python game_suite.py
+Read [LANGUAGE.md](LANGUAGE.md) for the language guide.
 
-No internet connection or API key is needed to play. The executable is built by GitHub Actions on a Windows runner.
+## Arcade
+
+A small desktop launcher with five games: Snake, Pong, Dodge the Blocks, Memory Match, and Number Guess. The Windows EXE is built by GitHub Actions.
+
+Open the **Actions** tab, select the latest successful Windows build, and download its artifact.
+
+## Experiments
+
+This repo is deliberately a playground. Expect unusual ideas, prototypes, and unfinished experiments.
