@@ -1,0 +1,6 @@
+# Randomness, but harmless
+say "THE GOBLIN CASINO (pretend coins only)"
+repeat 8
+  flip
+  roll 20
+end
